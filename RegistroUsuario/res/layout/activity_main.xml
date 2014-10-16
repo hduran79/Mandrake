@@ -1,0 +1,168 @@
+<TableLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*"
+    android:orientation="vertical"
+    tools:context="com.akc.registrousuario.MainActivity" >
+    
+    <!-- http://proyectosbeta.net/2013/04/un-ejemplo-usando-un-apdater-personalizado-listview-en-android/  -->
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_marginTop="10dip" >
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow2">
+        <ImageView
+			    android:id="@+id/imagenPersona"
+			    android:layout_width="107dp"
+			    android:layout_height="107dp"
+			    android:layout_x="29dp"
+			    android:layout_y="21dp"
+			    android:src="@drawable/ic_launcher" />
+    </TableRow>
+    
+    <TableRow android:id="@+id/tableRow3" >
+        <TextView
+            android:id="@+id/lblUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="@string/nombreUsuario"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/txtUser"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:ems="10" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow4" >
+
+        <TextView
+            android:id="@+id/lblListFechaNac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="@string/fechaNacimiento"
+            android:textColor="#000" 
+            android:hint="@string/formatoFecha"
+            />
+
+        <EditText
+            android:id="@+id/txtFechaNac"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:ems="10" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow5" >
+
+        <TextView
+            android:id="@+id/lblPais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="@string/cmbpais"
+            android:textColor="#000" />
+
+        <Spinner
+            android:id="@+id/spnpaises"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow6" >
+
+        <TextView
+            android:id="@+id/lblSexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="@string/rdisexo"
+            android:textColor="#000" />
+
+        <RadioGroup
+            android:id="@+id/rgrsexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/rdimasculino"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rdifemenino"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/lblIngles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chkingles"
+            android:textColor="#000"
+            android:layout_marginLeft="5dip" />
+
+        <CheckBox
+            android:id="@+id/chIdioma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="@string/si" />
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow8" >
+
+        <Button
+            android:id="@+id/btnRegistro"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnRegistro" />
+
+        <Button
+            android:id="@+id/btnVerReg"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btnVerReg" />
+
+    </TableRow>
+
+</TableLayout>

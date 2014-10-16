@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Registro de Usuarios</string>
+    <string name="titulo">Registro de Usuarios</string>
+    <string name="action_settings">Settings</string>
+    <string name="nombreUsuario">Nombre Completo</string>
+    <string name="fechaNacimiento">Fecha Nacimiento</string>
+    <string name="cmbpais">Pais</string>
+    <string name="rdisexo">Sexo</string>
+    <string name="rdimasculino">Masculino</string>
+    <string name="rdifemenino">Femenino</string>
+    <string name="chkingles">Habla Ingles</string>
+    <string name="si">Si</string>
+    <string name="btnRegistro">Agregar</string>
+    <string name="btnVerReg">Ver Registros</string>
+    <string name="btnCerrar">Cerrar</string>
+    <string name="formatoFecha">dd/mm/yyyy</string>
+    <string name="btnEliminar">Eliminar</string>
+    <string name="btnUpdate">Actualizar</string>
+    <string name="agregarImagenUsuario">Agregar Imagen</string>
+
+    <string-array name="paises">
+        <item>Argentina</item>
+        <item>Bolivia</item>
+        <item>Brasil</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Ecuador</item>
+        <item>Mexico</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+    </string-array>
+
+    <string name="title_activity_registro">Registro</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_listado_user">ListadoUser</string>
+    <string name="title_activity_layout_lista">MainActivity</string>
+    <string name="title_activity_usuario_detalle">UsuarioDetalle</string>
+    <string name="title_activity_prueba">Prueba</string>
+
+</resources>
